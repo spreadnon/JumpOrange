@@ -1,0 +1,427 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%.1f kcal" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%.1f kcal"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%.1f 千卡"
+          }
+        }
+      }
+    },
+    "%d / %d Today" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今日进度 %1$d / %2$d"
+          }
+        }
+      }
+    },
+    "%d jumps" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d 次跳跃"
+          }
+        }
+      }
+    },
+    "%lld" : {
+
+    },
+    "🎉 Goal Reached! 🎉" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🎉 达成目标！ 🎉"
+          }
+        }
+      }
+    },
+    "1.0.0" : {
+
+    },
+    "7-Day Trend" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7日趋势"
+          }
+        }
+      }
+    },
+    "About" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关于"
+          }
+        }
+      }
+    },
+    "Adjust if JumpOrange undercounts or overcounts jumps. Lower sensitivity requires harder jumps to register." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "如果跳跃次数偏多或偏少，请进行调整。较低的灵敏度需要更用力跳跃才能记录。"
+          }
+        }
+      }
+    },
+    "AirPods Connected" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AirPods 已连接"
+          }
+        }
+      }
+    },
+    "Awesome!" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "太棒了！"
+          }
+        }
+      }
+    },
+    "Cartoon" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "卡通"
+          }
+        }
+      }
+    },
+    "Charts require iOS 16+" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "图表功能需要 iOS 16 及以上版本"
+          }
+        }
+      }
+    },
+    "Daily Goal" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "每日目标"
+          }
+        }
+      }
+    },
+    "Dashboard" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "仪表盘"
+          }
+        }
+      }
+    },
+    "Day" : {
+
+    },
+    "Enable Voice" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开启语音"
+          }
+        }
+      }
+    },
+    "Est. Calories" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "预估消耗热量"
+          }
+        }
+      }
+    },
+    "Every 10 Jumps" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "每 10 次跳跃"
+          }
+        }
+      }
+    },
+    "Every 50 Jumps" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "每 50 次跳跃"
+          }
+        }
+      }
+    },
+    "Every 100 Jumps" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "每 100 次跳跃"
+          }
+        }
+      }
+    },
+    "Goal Reached! Great Job!" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "目标达成！做得好！"
+          }
+        }
+      }
+    },
+    "Goals" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "目标设置"
+          }
+        }
+      }
+    },
+    "High (Light Jumps)" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "高 (轻巧跳跃)"
+          }
+        }
+      }
+    },
+    "History" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "历史记录"
+          }
+        }
+      }
+    },
+    "JumpOrange" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "JumpOrange"
+          }
+        }
+      }
+    },
+    "Jumps" : {
+
+    },
+    "JUMPS" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "次跳跃"
+          }
+        }
+      }
+    },
+    "Low (Hard Jumps)" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "低 (需用力跳跃)"
+          }
+        }
+      }
+    },
+    "Mechanical" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "机械"
+          }
+        }
+      }
+    },
+    "Medium (Normal)" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "中 (正常跳跃)"
+          }
+        }
+      }
+    },
+    "No jumps recorded yet." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "暂无跳跃记录。"
+          }
+        }
+      }
+    },
+    "Report Interval" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "播报间隔"
+          }
+        }
+      }
+    },
+    "Searching for AirPods..." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在寻找 AirPods..."
+          }
+        }
+      }
+    },
+    "Sensitivity" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "灵敏度"
+          }
+        }
+      }
+    },
+    "Sensor Tuning" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "传感器调优"
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置"
+          }
+        }
+      }
+    },
+    "Standard" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "标准"
+          }
+        }
+      }
+    },
+    "Today's Summary" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今日总结"
+          }
+        }
+      }
+    },
+    "Total Jumps" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "总跳跃次数"
+          }
+        }
+      }
+    },
+    "Version" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "版本"
+          }
+        }
+      }
+    },
+    "Voice Feedback" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "语音反馈"
+          }
+        }
+      }
+    },
+    "Voice Style" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "语音风格"
+          }
+        }
+      }
+    },
+    "You completed your daily goal of %d jumps!" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您已完成今天 %d 次跳跃的目标！"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
