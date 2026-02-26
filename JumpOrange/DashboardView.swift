@@ -47,11 +47,11 @@ struct DashboardView: View {
                 
                 // Goal Progress
                 VStack {
-                    ProgressView(value: Double(motionManager.jumpCount), total: Double(storageManager.dailyGoal))
+                    ProgressView(value: Double(storageManager.getTodayTotal()), total: Double(storageManager.dailyGoal))
                         .progressViewStyle(LinearProgressViewStyle(tint: .orange))
                         .padding(.horizontal, 40)
                     
-                    Text(String(format: NSLocalizedString("%d / %d Today", comment: ""), motionManager.jumpCount, storageManager.dailyGoal))
+                    Text(String(format: NSLocalizedString("%d / %d Today", comment: ""), storageManager.getTodayTotal(), storageManager.dailyGoal))
                         .font(.footnote)
                         .foregroundColor(.secondary)
                 }
