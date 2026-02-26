@@ -81,9 +81,10 @@ struct DashboardView: View {
                         Image(systemName: motionManager.isTracking ? "pause.circle.fill" : "play.circle.fill")
                             .resizable()
                             .frame(width: 80, height: 80)
-                            .foregroundColor(.orange)
-                            .shadow(color: .orange.opacity(0.3), radius: 10, x: 0, y: 5)
+                            .foregroundColor(motionManager.isHeadphonesConnected ? .orange : Color.gray.opacity(0.3))
+                            .shadow(color: motionManager.isHeadphonesConnected ? .orange.opacity(0.3) : .clear, radius: 10, x: 0, y: 5)
                     }
+                    .disabled(!motionManager.isHeadphonesConnected)
                 }
                 .padding(.bottom, 30)
             }

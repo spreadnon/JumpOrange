@@ -12,6 +12,9 @@ class MotionManager: NSObject, ObservableObject {
     @Published var isHeadphonesConnected: Bool = false
     @Published var isTracking: Bool = false
     
+    // Maintain a separate state to handle background checking versus active tracking.
+    private var isCheckingStatus: Bool = false
+    
     // Configurable thresholds
     var jumpThreshold: Double = 1.2
     let cooldownInterval: TimeInterval = 0.3
@@ -21,7 +24,16 @@ class MotionManager: NSObject, ObservableObject {
     override init() {
         super.init()
         headphoneMotionManager.delegate = self
-        checkHeadphoneStatus()
+        startStatusPolling()
+    }
+    
+    // Periodically poll for device motion when not actively tracking
+    private func startStatusPolling() {
+        // Poll every 2 seconds
+        motionTimer?.invalidate()
+        motionTimer = Timer.scheduledTimer(withTimeInterval: 2.0, repeats: true) { [weak self] _ in
+            self?.checkHeadphoneStatus()
+        }
     }
     
     func startTracking() {
@@ -31,15 +43,29 @@ class MotionManager: NSObject, ObservableObject {
         }
         
         isTracking = true
+        // If we were just checking status in the background, we don't need to restart updates, 
+        // just process them differently. But safely, reset updates.
+        headphoneMotionManager.stopDeviceMotionUpdates()
+        motionTimer?.invalidate()
+        
         headphoneMotionManager.startDeviceMotionUpdates(to: .main) { [weak self] (motion, error) in
-            guard let self = self, let motion = motion, error == nil else { return }
-            self.processMotion(motion)
+            guard let self = self else { return }
+            
+            // If we receive data, then headphones are definitely connected and worn.
+            if !self.isHeadphonesConnected {
+                self.isHeadphonesConnected = true
+            }
+            
+            if let motion = motion, error == nil {
+                self.processMotion(motion)
+            }
         }
     }
     
     func stopTracking() {
-        headphoneMotionManager.stopDeviceMotionUpdates()
         isTracking = false
+        headphoneMotionManager.stopDeviceMotionUpdates()
+        startStatusPolling()
     }
     
     func resetCount() {
@@ -75,43 +101,63 @@ class MotionManager: NSObject, ObservableObject {
     }
     
     private func checkHeadphoneStatus() {
-        let session = AVAudioSession.sharedInstance()
-        let isConnected = session.currentRoute.outputs.contains {
-            $0.portType == .bluetoothA2DP || $0.portType == .bluetoothLE || $0.portType == .headphones
-        }
-        self.isHeadphonesConnected = isConnected
+        // Without active tracking, we can't reliably know if AirPods are worn based on `isDeviceMotionAvailable` alone.
+        // We will briefly try to start motion updates to see if we get data, then immediately stop to save battery,
+        // or just rely on the first callback.
         
-        NotificationCenter.default.addObserver(self, selector: #selector(routeChanged), name: AVAudioSession.routeChangeNotification, object: nil)
+        guard !isTracking else { return }
+        guard headphoneMotionManager.isDeviceMotionAvailable else {
+            if self.isHeadphonesConnected {
+                DispatchQueue.main.async { self.isHeadphonesConnected = false }
+            }
+            return
+        }
+        
+        isCheckingStatus = true
+        
+        headphoneMotionManager.startDeviceMotionUpdates(to: .main) { [weak self] (motion, error) in
+            guard let self = self else { return }
+            
+            DispatchQueue.main.async {
+                // If we receive any reliable motion data
+                if motion != nil && error == nil {
+                    if !self.isHeadphonesConnected {
+                        self.isHeadphonesConnected = true
+                    }
+                } else {
+                    if self.isHeadphonesConnected {
+                        self.isHeadphonesConnected = false
+                    }
+                }
+            }
+            
+            // Stop immediately after checking to avoid draining battery when not explicitly tracking
+            self.headphoneMotionManager.stopDeviceMotionUpdates()
+            self.isCheckingStatus = false
+        }
     }
     
     @objc private func routeChanged(notification: Notification) {
-        let session = AVAudioSession.sharedInstance()
-        let isConnected = session.currentRoute.outputs.contains {
-            $0.portType == .bluetoothA2DP || $0.portType == .bluetoothLE || $0.portType == .headphones
-        }
-        DispatchQueue.main.async {
-            self.isHeadphonesConnected = isConnected
-            if !isConnected && self.isTracking {
-                self.stopTracking()
-            }
-        }
+        // Fallback or additional handling if needed, but CoreMotion delegation and active updates are more reliable for AirPods.
     }
 }
 
 extension MotionManager: CMHeadphoneMotionManagerDelegate {
-    func headphoneMotionManagerDidConnect(_ manager: CMHeadphoneMotionManager) {
-        DispatchQueue.main.async {
-            self.isHeadphonesConnected = true
+        func headphoneMotionManagerDidConnect(_ manager: CMHeadphoneMotionManager) {
+            DispatchQueue.main.async {
+                self.isHeadphonesConnected = true
+            }
+        }
+        
+        func headphoneMotionManagerDidDisconnect(_ manager: CMHeadphoneMotionManager) {
+            DispatchQueue.main.async {
+                self.isHeadphonesConnected = false
+                if self.isTracking {
+                    self.stopTracking() // Will drop to status checking
+                }
+            }
         }
     }
-    
-    func headphoneMotionManagerDidDisconnect(_ manager: CMHeadphoneMotionManager) {
-        DispatchQueue.main.async {
-            self.isHeadphonesConnected = false
-            self.stopTracking()
-        }
-    }
-}
 
 extension Notification.Name {
     static let didRegisterJump = Notification.Name("didRegisterJump")
