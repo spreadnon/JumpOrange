@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  JumpOrange
-//
-//  Created by Jeremy chen on 2026/2/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -12,17 +5,27 @@ struct ContentView: View {
         TabView {
             DashboardView()
                 .tabItem {
-                    Label("Dashboard", systemImage: "play.fill")
+                    Label("主页", systemImage: "house.fill")
                 }
             
-            HistoryView()
+            RhythmGameView()
                 .tabItem {
-                    Label("History", systemImage: "chart.bar.fill")
+                    Label("节奏", systemImage: "music.note.list")
+                }
+            
+            DailyChallengeView()
+                .tabItem {
+                    Label("挑战", systemImage: "bolt.fill")
+                }
+            
+            AchievementsView()
+                .tabItem {
+                    Label("成就", systemImage: "trophy.fill")
                 }
             
             SettingsView()
                 .tabItem {
-                    Label("Settings", systemImage: "gearshape.fill")
+                    Label("设置", systemImage: "gearshape.fill")
                 }
         }
         .tint(.orange)
@@ -34,4 +37,6 @@ struct ContentView: View {
         .environmentObject(MotionManager())
         .environmentObject(StorageManager())
         .environmentObject(VoiceManager.shared)
+        .environmentObject(AchievementManager())
+        .environmentObject(DailyChallengeManager())
 }

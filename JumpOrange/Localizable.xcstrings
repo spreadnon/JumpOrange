@@ -2,6 +2,7 @@
   "sourceLanguage" : "en",
   "strings" : {
     "%.1f kcal" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -18,6 +19,7 @@
       }
     },
     "%d / %d Today" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -28,6 +30,7 @@
       }
     },
     "%d jumps" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -40,7 +43,52 @@
     "%lld" : {
 
     },
+    "%lld / %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld / %2$lld"
+          }
+        }
+      }
+    },
+    "%lld BPM" : {
+
+    },
+    "%lld 天" : {
+
+    },
+    "%lld 拍" : {
+
+    },
+    "%lld 次" : {
+
+    },
+    "%lld 次训练" : {
+
+    },
+    "%lld/%lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld/%2$lld"
+          }
+        }
+      }
+    },
+    "%lld秒" : {
+
+    },
+    "×%lld" : {
+
+    },
+    "✅ 已完成" : {
+
+    },
     "🎉 Goal Reached! 🎉" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -50,10 +98,14 @@
         }
       }
     },
+    "🎉 目标达成！🎉" : {
+
+    },
     "1.0.0" : {
 
     },
     "7-Day Trend" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -63,7 +115,11 @@
         }
       }
     },
+    "7日趋势" : {
+
+    },
     "About" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -74,6 +130,7 @@
       }
     },
     "Adjust if JumpOrange undercounts or overcounts jumps. Lower sensitivity requires harder jumps to register." : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -84,6 +141,7 @@
       }
     },
     "AirPods Connected" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -93,7 +151,11 @@
         }
       }
     },
+    "AirPods 已连接" : {
+
+    },
     "Awesome!" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -115,6 +177,7 @@
       }
     },
     "Charts require iOS 16+" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -125,6 +188,7 @@
       }
     },
     "Daily Goal" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -135,6 +199,7 @@
       }
     },
     "Dashboard" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -144,10 +209,8 @@
         }
       }
     },
-    "Day" : {
-
-    },
     "Enable Voice" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -158,6 +221,7 @@
       }
     },
     "Est. Calories" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -168,6 +232,7 @@
       }
     },
     "Every 10 Jumps" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -178,6 +243,7 @@
       }
     },
     "Every 50 Jumps" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -188,6 +254,7 @@
       }
     },
     "Every 100 Jumps" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -198,6 +265,7 @@
       }
     },
     "Goal Reached! Great Job!" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -208,6 +276,7 @@
       }
     },
     "Goals" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -218,6 +287,7 @@
       }
     },
     "High (Light Jumps)" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -228,6 +298,7 @@
       }
     },
     "History" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -238,6 +309,7 @@
       }
     },
     "JumpOrange" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -247,10 +319,11 @@
         }
       }
     },
-    "Jumps" : {
+    "JumpOrange 🍊" : {
 
     },
     "JUMPS" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -261,6 +334,7 @@
       }
     },
     "Low (Hard Jumps)" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -282,6 +356,7 @@
       }
     },
     "Medium (Normal)" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -292,6 +367,7 @@
       }
     },
     "No jumps recorded yet." : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -302,6 +378,7 @@
       }
     },
     "Report Interval" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -312,6 +389,7 @@
       }
     },
     "Searching for AirPods..." : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -322,6 +400,7 @@
       }
     },
     "Sensitivity" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -332,6 +411,7 @@
       }
     },
     "Sensor Tuning" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -342,6 +422,7 @@
       }
     },
     "Settings" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -363,6 +444,7 @@
       }
     },
     "Today's Summary" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -373,6 +455,7 @@
       }
     },
     "Total Jumps" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -383,6 +466,7 @@
       }
     },
     "Version" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -393,6 +477,7 @@
       }
     },
     "Voice Feedback" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -403,6 +488,7 @@
       }
     },
     "Voice Style" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -413,6 +499,7 @@
       }
     },
     "You completed your daily goal of %d jumps!" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -421,6 +508,231 @@
           }
         }
       }
+    },
+    "中" : {
+
+    },
+    "主页" : {
+
+    },
+    "今日挑战" : {
+
+    },
+    "今日暂无挑战" : {
+
+    },
+    "今日概览" : {
+
+    },
+    "传感器调节" : {
+
+    },
+    "低" : {
+
+    },
+    "你完成了今日%lld次跳跃目标！" : {
+
+    },
+    "关于" : {
+
+    },
+    "再来一次" : {
+
+    },
+    "最长连续" : {
+
+    },
+    "准备跳跃！" : {
+
+    },
+    "剩余" : {
+
+    },
+    "卡通" : {
+
+    },
+    "历史记录" : {
+
+    },
+    "取消" : {
+
+    },
+    "启用语音" : {
+
+    },
+    "太棒了！" : {
+
+    },
+    "好的" : {
+
+    },
+    "如果跳跃检测不准确，请调整灵敏度。低灵敏度需要更大的跳跃动作。" : {
+
+    },
+    "已重置" : {
+
+    },
+    "应用名称" : {
+
+    },
+    "开始" : {
+
+    },
+    "开始跳跃吧！" : {
+
+    },
+    "得分" : {
+
+    },
+    "总分" : {
+
+    },
+    "总跳跃" : {
+
+    },
+    "成就" : {
+
+    },
+    "成就 🏆" : {
+
+    },
+    "成就已解锁" : {
+
+    },
+    "所有数据已成功重置。" : {
+
+    },
+    "挑战" : {
+
+    },
+    "播报间隔" : {
+
+    },
+    "数据管理" : {
+
+    },
+    "日期" : {
+
+    },
+    "暂停" : {
+
+    },
+    "暂无历史记录" : {
+
+    },
+    "本周挑战" : {
+
+    },
+    "机械" : {
+
+    },
+    "查看历史记录" : {
+
+    },
+    "标准" : {
+
+    },
+    "正在搜索 AirPods..." : {
+
+    },
+    "每 10 次" : {
+
+    },
+    "每 50 次" : {
+
+    },
+    "每 100 次" : {
+
+    },
+    "每日挑战" : {
+
+    },
+    "每日挑战 ⚡" : {
+
+    },
+    "每日目标" : {
+
+    },
+    "灵敏度" : {
+
+    },
+    "版本" : {
+
+    },
+    "目标" : {
+
+    },
+    "确认重置" : {
+
+    },
+    "累计跳跃" : {
+
+    },
+    "结束游戏" : {
+
+    },
+    "节奏" : {
+
+    },
+    "节奏跳跃 🎵" : {
+
+    },
+    "设置" : {
+
+    },
+    "设置 ⚙️" : {
+
+    },
+    "语音反馈" : {
+
+    },
+    "语音风格" : {
+
+    },
+    "请先连接 AirPods 才能开始游戏" : {
+
+    },
+    "跟着节拍跳跃，获取最高评分！" : {
+
+    },
+    "跳跃" : {
+
+    },
+    "跳跃次数" : {
+
+    },
+    "返回" : {
+
+    },
+    "还没有跳跃记录" : {
+
+    },
+    "这将清除所有跳跃记录、成就和设置。此操作无法撤销。" : {
+
+    },
+    "进度" : {
+
+    },
+    "连击" : {
+
+    },
+    "连续天数" : {
+
+    },
+    "选择曲目" : {
+
+    },
+    "重置" : {
+
+    },
+    "重置所有数据" : {
+
+    },
+    "预估热量" : {
+
+    },
+    "高" : {
+
     }
   },
   "version" : "1.0"
